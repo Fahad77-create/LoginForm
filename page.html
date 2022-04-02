@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Successful LogIn</title>
 </head>
-
+<style>
+    body{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    #LogOut_Btn{
+        position: absolute;
+        top: 7px;
+        left:93% ;
+        height: 40px;
+        width: 90px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: darkblue;
+        border:2px solid rgb(0, 90, 180);
+        border-radius:5px ;
+    }
+    nav{
+        background-color: rgba(43, 46, 226, 0.281);
+        height: 50px;
+        position: relative;
+    }
+</style>
 <body>
+      <nav >
+        <button id="LogOut_Btn">Log Out</button>
+    </nav>
     <center>
         <h1>Welcome To Successful Login Page !</h1>
     </center>
@@ -72,5 +99,9 @@
         Asperiores, illum.</p>
 
 </body>
-
+<script>
+       LogOut_Btn.addEventListener('click', e=>{
+       location.assign("index.html")
+    })
+</script>
 </html>
